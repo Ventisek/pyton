@@ -88,7 +88,8 @@ elif figura==5:
         print("to jest pole rombu z wysokosci i podstawy")
         print(a*h)
 else:
-    print("Nie ma takiej figury w spisie kolezko")
+    print("Nie ma takiej figury w spisie kolezkoo")
+    print("aha")
 
     
     
