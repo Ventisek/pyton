@@ -89,7 +89,6 @@ elif figura==5:
         print(a*h)
 else:
     print("Nie ma takiej figury w spisie kolezkoo")
-    print("aha")
 
     
     

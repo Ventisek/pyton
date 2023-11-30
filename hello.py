@@ -2,14 +2,14 @@ import time
 import math
 import random 
 start=time.time()
-n=int(input("Podaj liczbe calkowita: "))
+#n=int(input("Podaj liczbe calkowita: "))
 
-for i in range(n):
-   for j in range(n):
-      print("#", end='')
-   print()
-end=time.time()
-print(end-start)
+#for i in range(n):
+  # for j in range(n):
+     # print("#", end='')
+   #print()
+#end=time.time()
+#print(end-start)
 
 
 # print("Halo swiecie")
@@ -74,9 +74,9 @@ print(end-start)
 # while liczba<=0:
 #      liczba=int(input("podaj liczbe jeszcze raz:"))
 
-# def powitanie():
-#           print("czesc")
-# powitanie()
+def powitanie():
+       print("czesc")
+powitanie()
 
 # def dzielenie(dzielna,dzielnik):
 #      if dzielnik==0:
@@ -84,10 +84,9 @@ print(end-start)
 #      else:
 #           return dzielna/dzielnik
 # print(dzielenie(4,2)) 
-
-# lista=[930,780,220,590]
-# print(lista)
-# #print(*lista)
+ #lista=[930,780,220,590]
+#print(lista)
+#print(*lista)
 # #print(*lista, sep=",")
 # #print(type(lista))
 
