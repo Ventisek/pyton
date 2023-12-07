@@ -42,7 +42,7 @@ while True:
         print("Wiec w rezultacie jest remis")
     else:
         print("Nie wybrales zadnej z powyzszych opcji kolezko")
-    ponownie = input("Czy chcesz powtórzyć program? (tak/nie): ")
+    ponownie = input("Czy chcesz powtórzyć gre? (tak/nie): ")
     if ponownie.lower() != 'tak':
         break
 

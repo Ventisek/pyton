@@ -8,7 +8,7 @@ print("1-Kwadrat 2-Prostokat 3-Trojkat 4-Okrag 5-Rab")
 figura=int(input("W takim razie podaj liczbe odpowiadajaca figurze ktorej chcesz obliczyc pole i obwod :"))
 if figura==1:
     print("W takim razie obliczasz pole i obwod kwadratu")
-    a=float(input("Podaj liczbe a: "))
+    a=float(input("Podaj Bok kwadratu: "))
     while a<=0:
         print("Nie ma takiego boku podaj go jescze raz: ")
         a=float(input("Podaj liczbe a: "))

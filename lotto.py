@@ -15,13 +15,13 @@ def sprawdz_wynik(liczby_gracza, wylosowane):
     return len(trafione)
 
 def main():
-    inwestycja=int(input("Podaj ile masz pieniedzy "))
+    los=int(input("Podaj za ile chcesz kupic los na lotto"))
     print("GRASZ W LOTTO")
     print("Wygrywasz cos przy juz odgadnieciu 3 liczb!!!")
-    print("Tak wygladaja mnozniki za 3 liczby 2 krotnie za 4 trzykrotnie za 5 czterokrotnie a za komplet az 10")
-    print("Kupiles los na lotto za 10 zl")
-    inwestycja += -10
-    print(f"\nTo sa twoje obecne pieniadze: {inwestycja}")
+    print("Tak wygladaja mnozniki za 3 liczby 10 krotnie za 20 trzykrotnie za 30 czterokrotnie a za komplet az 50")
+
+    
+  
 
 
     liczby_gracza = []
@@ -49,20 +49,20 @@ def main():
     print(f"Liczba trafionych liczb: {trafione}")
     if trafione == 3:
         print("Gratulacje wygrales grosze ")
-        inwestycja += inwestycja
-        print(f"\nTo sa twoje pieniadze po wygranej: {inwestycja}")
+        los += los*9
+        print(f"\nTo sa twoje pieniadze po wygranej: {los}")
     elif trafione==4:
         print("Gratulacje wygrales cos ")
-        inwestycja += inwestycja*2
-        print(f"\nTo sa twoje pieniadze po wygranej: {inwestycja}")
+        los += los*19
+        print(f"\nTo sa twoje pieniadze po wygranej: {los}")
     elif trafione==5:
         print("Gratulacje wygrales fajna sumke ")
-        inwestycja += inwestycja*3
-        print(f"\nTo sa twoje pieniadze po wygranej: {inwestycja}")
+        los += los*29
+        print(f"\nTo sa twoje pieniadze po wygranej: {los}")
     elif trafione==6:
         print("Gratulacje wygrales Fortune ")
-        inwestycja += inwestycja*9
-        print(f"\nTo sa twoje pieniadze po wygranej: {inwestycja}")
+        los += los*49
+        print(f"\nTo sa twoje pieniadze po wygranej: {los}")
     else:
         print("Nic nie wygrales unlucky")
 

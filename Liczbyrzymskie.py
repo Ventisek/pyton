@@ -15,16 +15,16 @@ liczbyrzymskie={
     500:"D",
     900:"CM",
     1000:"M"}
-liczba_dziesietna=int(input("Podaj liczbe dziesietna do 5000 tysiecy "))
-while liczba_dziesietna<1 or liczba_dziesietna>=5000:
+liczba_dziesietna=int(input("Podaj liczbe dziesietna do 3999 "))
+while liczba_dziesietna<1 or liczba_dziesietna>=3999:
     print("Podales liczbe z poza zakresu")
-    liczba_dziesietna=int(input("Podaj liczbe jesczer raz "))
+    liczba_dziesietna=int(input("Podaj liczbe jescze raz "))
 
 liczba_rzymska = ""
+for key in sorted(liczbyrzymskie.keys(), reverse=True):
+    while liczba_dziesietna >= key:
+        liczba_rzymska += liczbyrzymskie[key]
+        liczba_dziesietna -= key
 
-for symbol, wartosc in liczbyrzymskie.items():
-    while liczba_dziesietna >= wartosc:
-        liczba_rzymska += symbol
-        liczba_dziesietna -= wartosc
+print(f"Liczba rzymska: {liczba_rzymska}")
 
-print(f"Liczba dziesiętna {liczba_dziesietna} w systemie rzymskim to: {liczba_rzymska}")
