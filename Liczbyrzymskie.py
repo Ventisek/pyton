@@ -18,7 +18,7 @@ liczbyrzymskie={
 liczba_dziesietna=int(input("Podaj liczbe dziesietna do 3999 "))
 while liczba_dziesietna<1 or liczba_dziesietna>=3999:
     print("Podales liczbe z poza zakresu")
-    liczba_dziesietna=int(input("Podaj liczbe jescze raz "))
+    liczba_dziesietna=int(input("Podaj liczbe raz jescze "))
 
 liczba_rzymska = ""
 for key in sorted(liczbyrzymskie.keys(), reverse=True):
@@ -27,4 +27,3 @@ for key in sorted(liczbyrzymskie.keys(), reverse=True):
         liczba_dziesietna -= key
 
 print(f"Liczba rzymska: {liczba_rzymska}")
-
